@@ -401,7 +401,7 @@
         // --- TELEGRAM NOTIFICATION ---
         async function sendTelegramNotification(checkRecord) {
             const statusIcon = checkRecord.status === 'พร้อมใช้' ? '✅' : '❗️';
-            let message = `🚨 <b>แจ้งเตือนการตรวจเช็คเครื่อง EKG</b> 🚨\n\n`;
+            let message = `🚨 <b>แจ้งเตือนเช็คเครื่อง EKG Nihon-Kohden</b> 🚨\n\n`;
             message += `<b>วันที่:</b> ${new Date(checkRecord.date).toLocaleDateString('th-TH')}\n`;
             message += `<b>เวร:</b> ${checkRecord.shift}\n`;
             message += `<b>ผู้ตรวจ:</b> ${checkRecord.checkerName}\n`;
